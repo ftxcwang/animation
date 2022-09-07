@@ -15,11 +15,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 .svg-animate-demo{
-    width: 400px;
     //定义动画的流程
     .run_top_right {
         display: block;
-        animation: run-right-1 3s 0.4s 1 linear, run-right-2 3s 0.4s 1 cubic-bezier(.66, .1, .9, .41);
+        animation: run-right-1 3s 0.4s infinite linear, run-right-2 3s 0.4s infinite cubic-bezier(.66, .1, .9, .41);
         // animation: run-right-right 3s 0.4s 1 linear, run-right-top 3s 0.4s 1 ease-out;
         animation-fill-mode: forwards;
     }
